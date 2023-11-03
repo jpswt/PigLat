@@ -20,9 +20,9 @@ public class PigLatin {
       System.err.println("The translated word is: " + word + "yay");
     } else {
       for (int i = 0; i < word.length(); i++) {
-        char c = word.charAt(i);
-        String lchar = String.valueOf(c);
-        if (vowels.contains(lchar)) {
+        startC = word.charAt(i);
+        startChar = String.valueOf(startC);
+        if (vowels.contains(startChar)) {
           vowelPosition = i;
           break;
         }
